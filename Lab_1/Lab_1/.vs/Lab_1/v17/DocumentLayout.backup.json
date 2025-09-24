@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\Lab_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{41700DA0-5574-495D-BC94-F62FEBBF42F3}|Lab_1.vcxproj|C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\Lab_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{41700DA0-5574-495D-BC94-F62FEBBF42F3}|Lab_1.vcxproj|solutionrelative:Lab_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,9 +22,9 @@
               "Title": "Lab_1.cpp",
               "DocumentMoniker": "C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\Lab_1.cpp",
               "RelativeDocumentMoniker": "Lab_1.cpp",
-              "ToolTip": "C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\Lab_1.cpp",
-              "RelativeToolTip": "Lab_1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Git\\basics_of_programming\\Lab_1\\Lab_1\\Lab_1.cpp*",
+              "RelativeToolTip": "Lab_1.cpp*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-23T19:01:33.159Z",
               "EditorCaption": ""
