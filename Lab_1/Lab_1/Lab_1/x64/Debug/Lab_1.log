@@ -1,0 +1,5 @@
+﻿  Lab_1.cpp
+C:\Git\basics_of_programming\Lab_1\Lab_1\Lab_1.cpp(16,20): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Git\basics_of_programming\Lab_1\Lab_1\Lab_1.cpp(17,20): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Git\basics_of_programming\Lab_1\Lab_1\Lab_1.cpp(24,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  Lab_1.vcxproj -> C:\Git\basics_of_programming\Lab_1\Lab_1\x64\Debug\Lab_1.exe
