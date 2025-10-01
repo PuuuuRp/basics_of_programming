@@ -1,46 +1,48 @@
 ﻿#include <iostream>
 #include <bitset>
+#include <cstddef>
 
 using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    int A, i;
-    cout << "Введите значения для А и i: ";
-    cin >> A >> i;
-    if (i < 0 || i > 7) { // проверка на правильность введения значения i-го бита
-        cout << "Неправильное значение i!" << endl;
-        return 0;
-    }
-    else if (A > 255) { // проверка на правильность введения значения числа А (1 байт)
-        cout << "Неправильное значение A!" << endl;
-        return 0;
-    }
-    bitset<8> BinA = A;
-    //cout << A << " - " << BinA.to_string() << endl; // отладочный вывод для изначального A
-    if (BinA[i] == 0) {
-        A *= A;
-        bitset<16> BinA = A;
-        cout << A << " - " << BinA.to_string() << endl;
-        i = 0;
-        cout << "i = " << i << "; значение бита на нулевом индексе: " << BinA[i] << endl;
-    }
-    else {
-        bitset<8> Bin125 = 125;
-        string Repl = Bin125.to_string();
-        cout << "125 - " << Repl << " (125, у которого НЕ заменены все чётные биты на 0)" << endl;
-        Repl[1] = '0';
-        Repl[3] = '0';
-        Repl[5] = '0';
-        Repl[7] = '0';
-        cout << "125 - " << Repl << " (125, у которого заменены все чётные биты на 0)" << endl;
-    }
+    //unsigned short A;
+    //int i;
+    //cout << "Введите значения для А и i: ";
+    //cin >> A >> i;
+    //if (i < 0 || i > 15) { // проверка на правильность введения значения i-го бита
+    //    cout << "Неправильное значение i!" << endl;
+    //    return 0;
+    //}
+    //bitset<16> BinA = A;
+    ////cout << A << " - " << BinA << endl; // отладочный вывод для изначального A
+
+    //bitset<16> Sup(1 << i);
+    //if ((BinA & Sup) == 0) {
+    //    A *= A;
+    //    bitset<16> BinA = A;
+    //    cout << A << " - " << BinA << endl;
+
+    //    bitset<16> x(~(1 << i));
+    //    BinA = BinA & x;
+    //    A = BinA.to_ulong();
+    //    cout << A << " i0 - " << BinA << endl;
+    //}
+    //else {
+    //    int mask = 0b1010'1010'1010'1010;
+    //    bitset<16> Bin125 = 125;
+    //    cout << "125 - " << Bin125 << endl;
+    //    bitset<16> m = mask;
+    //    Bin125 = Bin125 & m;
+    //    int intBin125 = Bin125.to_ulong();
+    //    cout << intBin125 << " - " << Bin125 << endl;
+    //}
     
-
-
+    ///////////////////////////////////////
     int BusNumber;
     cin >> BusNumber;
+    cout << BusNumber << endl;
     switch (BusNumber) {
     case 113: 
         cout << "Калининград - Чапаево" << endl; 
@@ -84,6 +86,7 @@ int main()
     default:
         cout << "Номер автобуса не найден!" << endl;
     }
+    
 
     return 0;
 }
