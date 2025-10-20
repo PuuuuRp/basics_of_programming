@@ -43,20 +43,20 @@ int main() {
 //--------------------------------------------------------------
 
 // Задание №2
-    const int I = 3, J = 4;
-    int mat[I][J];
+    const int N_mat = 3, M_mat = 4;
+    int mat[N_mat][M_mat];
     // Заполнение матрицы
-    for (int i = 0; i < I; ++i) {
-        for (int j = 0; j < J; ++j) {
+    for (int i = 0; i < N_mat; ++i) {
+        for (int j = 0; j < M_mat; ++j) {
             std::cin >> mat[i][j];
         }
     }
     // Поиск строки с максимальным значением суммы элементов
-    int max_sum = 0;
+    int max_sum = std::numeric_limits<int>::min();
     int num_line = 0;
-    for (int i = 0; i < I; ++i) {
+    for (int i = 0; i < N_mat; ++i) {
         int sum_of_lines = 0;
-        for (int j = 0; j < J; ++j) {
+        for (int j = 0; j < M_mat; ++j) {
             sum_of_lines += mat[i][j];
         }
         if (max_sum < sum_of_lines) {
@@ -65,12 +65,12 @@ int main() {
         }
     }
     // Замена в найденной строке всех элементов на 999
-    for (int j = 0; j < J; ++j) {
+    for (int j = 0; j < M_mat; ++j) {
         mat[num_line][j] = 999;
     }
     // Вывод полученной матрицы
-    for (int i = 0; i < I; ++i) {
-        for (int j = 0; j < J; ++j) {
+    for (int i = 0; i < N_mat; ++i) {
+        for (int j = 0; j < M_mat; ++j) {
             std::cout << mat[i][j] << " ";
         }
         std::cout << std::endl;
