@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git\\basics_of_programming\\Lab_5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA314352-08CB-4DA0-B9AC-597C57069648}|Lab_5.vcxproj|C:\\Git\\basics_of_programming\\Lab_5\\Lab_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DA314352-08CB-4DA0-B9AC-597C57069648}|Lab_5.vcxproj|solutionrelative:Lab_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lab_5.cpp",
+              "DocumentMoniker": "C:\\Git\\basics_of_programming\\Lab_5\\Lab_5.cpp",
+              "RelativeDocumentMoniker": "Lab_5.cpp",
+              "ToolTip": "C:\\Git\\basics_of_programming\\Lab_5\\Lab_5.cpp",
+              "RelativeToolTip": "Lab_5.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T22:59:18.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
