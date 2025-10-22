@@ -1,3 +1,4 @@
 ﻿  Lab_5.cpp
-C:\Git\basics_of_programming\Lab_5\Lab_5.cpp(30,22): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Git\basics_of_programming\Lab_5\Lab_5.cpp(11,31): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Git\basics_of_programming\Lab_5\Lab_5.cpp(19,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   Lab_5.vcxproj -> C:\Git\basics_of_programming\Lab_5\x64\Debug\Lab_5.exe
