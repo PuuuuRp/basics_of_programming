@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 #include <stdlib.h>
 
-int cnt = 0;
-
 void PrintMat(int **mat, int a, int b) {
     for (int i = 0; i < a; ++i) {
         for (int j = 0; j < b; ++j) {
@@ -13,25 +11,25 @@ void PrintMat(int **mat, int a, int b) {
     std::cout << std::endl;
 }
 
-void PrintArr(int* arr) {
-    for (int i = 0; i < cnt; ++i) {
+void PrintArr(int* arr, int* pcnt) {
+    for (int i = 0; i < *pcnt; ++i) {
         std::cout << arr[i] << " ";
     }
     std::cout << std::endl << std::endl;
 }
 
-int* FindRows(int** mat, int rows, int colls) {
+int* FindRows(int** mat, int rows, int colls, int* pcnt) {
     int* FoundRows = (int*)calloc(rows, sizeof(int));
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < colls; ++j) {
             if (mat[i][j] == 0) {
-                FoundRows[cnt] = i;
-                cnt += 1;
+                FoundRows[*pcnt] = i;
+                *pcnt += 1;
                 break;
             }
         }
     }
-    int* NewFoundRows = (int*)realloc(FoundRows, cnt * sizeof(int));
+    int* NewFoundRows = (int*)realloc(FoundRows, *pcnt * sizeof(int));
     return NewFoundRows;
 }
 
@@ -98,8 +96,11 @@ int main(){
     PrintMat(NewMat, rows, colls);
 
     // Поиск строк, содержащих 0
-    int* ZeroRows = FindRows(NewMat, rows, colls);
-    PrintArr(ZeroRows);
+    int cnt = 0;
+    int* pcnt = &cnt;
+    int* ZeroRows = FindRows(NewMat, rows, colls, pcnt);
+    std::cout << cnt << std::endl;
+    PrintArr(ZeroRows, pcnt);
 
     // Перемещение строк и удаление строк, сордержащих 0
     if (cnt == rows) {
